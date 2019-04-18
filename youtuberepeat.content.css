@@ -1,0 +1,42 @@
+/**
+ * Button
+ */
+
+html .ytp-repeat-button {
+	float: right;
+	text-align: center !important;
+	font-weight: bold;
+	color: white;
+}
+html .youtube-repeat-on .ytp-repeat-button {
+	background-color: green;
+}
+
+/**
+ * Blue bar
+ */
+
+.youtube-repeat-on {
+	position: relative;
+}
+.ytp-repeat-blue-bar,
+.ytp-repeat-blue-bar > .active {
+	position: absolute;
+	z-index: 9999;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.ytp-repeat-blue-bar {
+	display: none;
+	top: 3px;
+	height: 3px;
+	background-color: black;
+}
+.youtube-repeat-on > .ytp-repeat-blue-bar {
+	display: block;
+}
+.ytp-repeat-blue-bar > .active {
+	height: 100%;
+	background-color: lime;
+}
