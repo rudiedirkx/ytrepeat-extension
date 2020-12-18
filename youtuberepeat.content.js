@@ -59,8 +59,6 @@ function onLoad() {
 	playerFinder = setInterval(findPlayer, 500);
 
 	function extendPlayer() {
-		video = $player.querySelector('video');
-
 		$bar = document.createElement('div');
 		$bar.className = 'ytp-repeat-blue-bar';
 		$bar.innerHTML = '<div class="active"></div>';
@@ -72,6 +70,7 @@ function onLoad() {
 		$btn.onclick = function(e) {
 			e.stopPropagation();
 
+			video = $player.querySelector('video');
 			var repeat = $player.classList.toggle('youtube-repeat-on');
 			if ( repeat ) {
 				video.addEventListener('timeupdate', onTimeUpdate);
