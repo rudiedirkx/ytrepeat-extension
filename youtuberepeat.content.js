@@ -49,7 +49,7 @@ function onLoad() {
 
 	function findPlayer() {
 		$player = document.querySelector('#player-container:not(.ytd-miniplayer), :not(.skeleton) > #player-api, .html5-video-player.el-embedded');
-		$chrome = document.querySelector('.ytp-chrome-controls, .html5-player-chrome');
+		$chrome = document.querySelector('.ytp-right-controls') || document.querySelector('.ytp-chrome-controls');
 
 		if ( $chrome && $player && $player.querySelector('video') ) {
 			clearInterval(playerFinder);
