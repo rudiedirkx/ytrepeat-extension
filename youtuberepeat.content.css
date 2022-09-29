@@ -3,7 +3,7 @@
  */
 
 html .ytp-repeat-button {
-	float: right;
+	order: -1;
 	text-align: center !important;
 	font-weight: bold;
 	color: white;
