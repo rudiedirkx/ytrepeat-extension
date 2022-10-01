@@ -113,7 +113,7 @@ function onLoad() {
 				this.title = '';
 			}
 		};
-		$chrome.appendChild($btn);
+		$chrome.insertBefore($btn, $chrome.firstElementChild);
 	}
 
 }
